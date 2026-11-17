@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#140d16">
+<title>For Pri — My Princess</title>
+<style>
+:root{--bg:#0d0910;--ink:#fff7fb;--muted:#d9cbd4;--rose:#f19ab6;--gold:#e9c98c;--glass:rgba(255,255,255,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#351d2d 0,#140d16 38%,#08070b 100%);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 30%,rgba(241,154,182,.12),transparent 24%),radial-gradient(circle at 80% 60%,rgba(233,201,140,.10),transparent 22%);z-index:-1}
+.container{max-width:860px;margin:auto;padding:0 22px}.center{text-align:center}.serif{font-family:Georgia,"Times New Roman",serif}.sans{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;position:relative;padding:40px 20px}.hero-inner{text-align:center;max-width:720px}
+.crown{font-size:50px;filter:drop-shadow(0 0 18px rgba(233,201,140,.35));animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px)}} @keyframes pulse{50%{transform:scale(1.05);opacity:.85}}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:11px;color:var(--gold);margin-top:22px}
+h1{font-size:clamp(44px,12vw,92px);line-height:.95;margin:18px 0 12px;font-weight:500}.subtitle{font-size:20px;color:var(--muted);font-style:italic;line-height:1.7}
+.enter{display:inline-flex;margin-top:34px;padding:14px 26px;border:1px solid rgba(233,201,140,.6);border-radius:999px;color:#fff;text-decoration:none;background:rgba(255,255,255,.04);transition:.3s}.enter:hover{transform:translateY(-2px);background:rgba(233,201,140,.12)}
+.spark{position:absolute;width:4px;height:4px;background:#fff;border-radius:50%;opacity:.6;box-shadow:0 0 15px #fff}.s1{top:18%;left:15%}.s2{top:30%;right:14%}.s3{top:65%;left:10%}.s4{top:72%;right:18%}
+section{padding:100px 0}.eyebrow{color:var(--gold);font:600 11px system-ui;letter-spacing:3px;text-transform:uppercase}.title{font-size:clamp(34px,8vw,60px);font-weight:500;margin:12px 0 18px}.lead{max-width:650px;margin:auto;color:var(--muted);font-size:18px;line-height:1.9}
+.timeline{margin-top:55px;display:grid;gap:28px}.card{background:var(--glass);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:25px;backdrop-filter:blur(8px)}.date{font:600 11px system-ui;letter-spacing:2px;color:var(--gold);text-transform:uppercase}.card h3{font-size:26px;margin:10px 0}.card p{color:var(--muted);line-height:1.8;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:42px}.photo{margin:0;border-radius:20px;overflow:hidden;background:#1b121b;border:1px solid rgba(255,255,255,.08)}.photo img{width:100%;height:360px;object-fit:cover;display:block;transition:transform .7s}.photo:hover img{transform:scale(1.04)}.photo figcaption{padding:13px 15px;color:var(--muted);font:13px system-ui}
+@media(max-width:560px){.gallery{grid-template-columns:1fr}.photo img{height:430px}}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}.reason{min-height:150px;border:1px solid rgba(241,154,182,.2);border-radius:22px;padding:25px;background:linear-gradient(145deg,rgba(241,154,182,.09),rgba(255,255,255,.03));cursor:pointer}.reason .num{color:var(--rose);font:600 12px system-ui}.reason p{font-size:19px;line-height:1.55;margin:12px 0 0}.reason small{color:#bbaab4;font-family:system-ui}.letter{max-width:700px;margin:45px auto 0;background:#f7efe7;color:#33262b;padding:38px 30px;border-radius:6px;box-shadow:0 25px 80px rgba(0,0,0,.35);position:relative}.letter:before{content:"";position:absolute;inset:10px;border:1px solid rgba(70,45,50,.18);pointer-events:none}.letter p{font-size:19px;line-height:1.9;position:relative}.signature{font-size:24px;font-style:italic;text-align:right;margin-top:25px}.final{min-height:90svh;display:flex;align-items:center}.final-box{text-align:center;width:100%}.final h2{font-size:clamp(42px,11vw,80px);font-weight:500;line-height:1;margin:15px 0}.forever{color:var(--muted);font-size:19px;line-height:1.8}.music{margin:35px auto 0;display:flex;align-items:center;gap:10px;justify-content:center}.music button{border:1px solid rgba(233,201,140,.5);background:transparent;color:var(--gold);border-radius:999px;padding:11px 18px;cursor:pointer}.note{font:12px system-ui;color:#9f8d98;margin-top:10px}.footer{padding:30px;text-align:center;color:#756873;font:11px system-ui;letter-spacing:1px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s}.reveal.show{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div><div class="spark s4"></div>
+
+<header class="hero" id="top">
+<div class="hero-inner">
+<div class="crown">👑</div>
+<div class="kicker">A little world made only for you</div>
+<h1>For My Pri</h1>
+<div class="subtitle">“Somewhere between two people meeting<br>and two hearts becoming one…”</div>
+<a class="enter" href="#story">Enter My Little World&nbsp; ♥</a>
+</div>
+</header>
+
+<main>
+<section id="story">
+<div class="container reveal center">
+<div class="eyebrow">Our beginning</div>
+<div class="title">8 April 2019</div>
+<p class="lead">It all started with our first meet. I still remember the little things — the way you listened to me, the way we walked together holding hands, your laughter at my lame jokes, and especially the way you looked at me.</p>
+</div>
+
+<div class="container timeline">
+<div class="card reveal"><div class="date">Then</div><h3>Our first meet</h3><p>That day became the beginning of a story I never knew would become such a huge part of my life.</p></div>
+<div class="card reveal"><div class="date">Our first duo dance</div><h3>Sonu’s Wedding 🎶</h3><p>Our first duo dance at your friend's wedding — one of those moments that quietly became precious.</p></div>
+<div class="card reveal"><div class="date">A journey together</div><h3>Shirdi • Bike Ride 🛣️</h3><p>Sometimes the destination isn't the best part. Sometimes it's simply riding together, talking, laughing, and being beside each other.</p></div>
+<div class="card reveal"><div class="date">A memory worth keeping</div><h3>Ajanta Caves 🏔️</h3><p>A place we visited together, and a memory I know I'll always carry with me.</p></div>
+<div class="card reveal"><div class="date">Last year</div><h3>Our first Dandiya 💃</h3><p>Another first for us. Another memory that became ours.</p></div>
+</div>
+</section>
+
+<section>
+<div class="container reveal center">
+<div class="eyebrow">Our little memories</div>
+<div class="title">A few moments I never want to lose.</div>
+</div>
+<div class="container gallery">
+<div class="photo reveal"><img src="assets/memory-1.jpg"><figcaption>Just us, smiling together.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-2.jpg"><figcaption>Ajanta — one of our journeys.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-3.jpg"><figcaption>Where the memories began.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-4.jpg"><figcaption>Looking at you has always been easy.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-5.jpg"><figcaption>One of those silly, beautiful moments.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-6.jpg"><figcaption>Our little world.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-7.jpg"><figcaption>A memory I would choose again.</figcaption></div>
+<div class="photo reveal"><img src="assets/memory-8.jpg"><figcaption>More memories waiting to be made.</figcaption></div>
+</div>
+</section>
+
+<section>
+<div class="container reveal center">
+<div class="eyebrow">Why you're my princess</div>
+<div class="title">Tap the hearts.</div>
+<p class="lead">Every one has a little piece of the reason I fell for you.</p>
+</div>
+<div class="container reasons">
+<div class="reason reveal"><div class="num">01</div><p>The way you listen to me.</p></div>
+<div class="reason reveal"><div class="num">02</div><p>The way you look at me.</p></div>
+<div class="reason reveal"><div class="num">03</div><p>Your love that I can see in your eyes.</p></div>
+<div class="reason reveal"><div class="num">04</div><p>The way you laugh at my lame jokes.</p></div>
+<div class="reason reveal"><div class="num">05</div><p>Those roadside walks while holding your hand.</p></div>
+<div class="reason reveal"><div class="num">06</div><p>Because ordinary moments become precious with you.</p></div>
+</div>
+</section>
+
+<section>
+<div class="container reveal center">
+<div class="eyebrow">Open this slowly</div>
+<div class="title">A letter for you 💌</div>
+</div>
+<div class="container letter reveal">
+<p>My Pri,</p>
+<p>When I think about us, I don't think only about the big moments. I think about the small ones — our first meet, the way you listened to me, our hands together while walking on the roadside, your laughter at my stupid jokes, and that look in your eyes that always says more than words.</p>
+<p>We have danced together, travelled together, laughed together, and collected little memories that have quietly become some of the most precious parts of my life.</p>
+<p>I don't know what every tomorrow will bring. But there is one thing I know with all my heart:</p>
+<p><strong>Never stop loving me.</strong></p>
+<p>Because I don't want to stop choosing you, caring for you, laughing with you, travelling with you, and making new memories with you.</p>
+<p>Happy Princess Day to the girl who has been my favourite person for all these years.</p>
+<div class="signature">Always yours,<br>Vishal ❤️</div>
+</div>
+</section>
+
+<section class="final">
+<div class="container final-box reveal">
+<div class="eyebrow">And finally…</div>
+<h2>Happy Princess Day,<br>My Pri 👑</h2>
+<p class="forever">You don't need a crown to be my princess.<br>In my world, you already are.</p>
+<div class="music">
+<button id="musicBtn">♪ Play our song</button>
+</div>
+<div class="note" id="musicNote">To keep this website copyright-safe, add your own copy of “Alfaaz — Baga Vich” as <b>song.mp3</b> in the website folder.</div>
+</div>
+</section>
+</main>
+<footer class="footer">Made with love • Vishal → Pri • 08.04.2019 → forever</footer>
+
+<audio id="song" preload="none" src="song.mp3"></audio>
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+const btn=document.getElementById('musicBtn'), song=document.getElementById('song');
+btn.onclick=()=>{ if(song.paused){song.play().then(()=>btn.textContent='❚❚ Pause our song').catch(()=>document.getElementById('musicNote').textContent='Add your own song.mp3 file to this folder, then tap Play again.');}else{song.pause();btn.textContent='♪ Play our song'} };
+</script>
+</body>
+</html>
